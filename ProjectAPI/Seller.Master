@@ -1,0 +1,43 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Seller.master.vb" Inherits="ProjectAPI.Seller" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title></title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+      <div class="contenedor">
+        <h1 class="logo">La Molienda</h1>
+        <span class="icon-menu" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="Pages%20Seller/HomeSeller/HomeSeller.aspx" class="menu__link ">Inicio</a></li>
+            <li class="menu__item"><a href="../ProfileSeller/ProfileSeller.aspx" class="menu__link">Perfil</a></li>
+            <li class="menu__item"><a href="../ProductsSeller/ProductsSeller.aspx" class="menu__link">Productos</a></li>
+            <li class="menu__item"><a href="../ContactSeller/ContactSeller.aspx" class="menu__link">Contactanos</a></li>
+            <li class="menu__item"><a href="../../Login.aspx" class="menu__link">Cerrar Sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        
+    <footer class="footer">
+      <div class="contenedor">
+        <p>DESARROLLADO POR API - AGÍL PROCESO DE INVENTARIOS</p>
+        <p>Luis Alfonso Quiroga Silva</p>
+        <p>Brian Steven Moya Callejas</p>
+        <p>Uriel Armando Astaiza Castro</p>
+        <p class="copy">&copy; La Molienda Todos los derechos reservados</p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,348 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contenedor {
+    margin: auto;
+    width: 99%;
+}
+/*-------------------Estilos del header-------------------*/
+.header {
+    height: 60px;
+}
+
+    .header .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.logo, .icon-menu {
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #63C6C0;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*------------------Estilos del menu------------------*/
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    background: #63C6C0;
+    text-decoration: none;
+    color: #fff;
+}
+
+    .menu__link:hover, .select {
+        background: #3F7A76;
+        color: white;
+    }
+
+.mostrar {
+    left: 0;
+}
+
+/*------------------- Estilos buscador -----------------*/
+.buscador {
+    width: 100%;
+    margin: auto;
+}
+
+.input {
+    background: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="search"] {
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+}
+
+input[type="submit"] {
+    width: 15%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    input[type="submit"] {
+        width: 25%;
+    }
+
+    input[type="search"] {
+        width: 75%;
+        font-size: 12px;
+    }
+}
+
+/*--------------Estilos de banner--------------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+
+    .banner .contenedor {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+
+.banner__txt {
+    display: none;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+    .footer .social [class^="icon-"] {
+        display: inline-block;
+        color: #333;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 10px;
+        background: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+    }
+/*------------------Estilos responsive------------------*/
+
+@media(min-width:480px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .banner__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .banner__txt {
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+
+    .footer .social [class^="icon-"] {
+        margin: 0 10px;
+    }
+}
+
+@media(min-width:768px) {
+    .banner__titulo {
+        font-size: 50px;
+    }
+}
+
+@media(min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+
+    .section__titulo {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    .nav {
+        position: static;
+        width: auto;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .menu__link {
+        background: none;
+        font-size: 20px;
+    }
+
+    .select {
+        color: #fff;
+        background: #63C6C0;
+    }
+
+    .banner__titulo {
+        font-size: 60px;
+    }
+
+    .banner__txt {
+        font-size: 25px;
+    }
+}
+
+@media(min-width:1280px) {
+    .contenedor {
+        width: 1200px;
+    }
+
+    .logo {
+        font-size: 60px;
+    }
+
+    .banner .contenedor {
+        top: 40%;
+    }
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.container-category {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+    .container-category label {
+        padding: 6px 20px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        background: #e2e2e2;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .container-category label:hover {
+            opacity: 0.8;
+        }
+
+
+
+/*Post - Publicaciones*/
+
+.container-post {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts {
+    width: 100%;
+    padding: 20px;
+}
+
+    .posts .post {
+        background: #DBE4EB;
+        box-shadow: 0 0 30px -20px black;
+        border-radius: 6px;
+        overflow: hidden;
+        margin: 40px;
+        padding-bottom: 20px;
+    }
+
+        .posts .post:hover {
+            box-shadow: 0 0 40px -20px black;
+        }
+
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category] {
+    display: block;
+}
+
+[value="Inventario"]:checked ~ .posts .post:not([data-category~="Inventario"]),
+[value="Productos"]:checked ~ .posts .post:not([data-category~="Productos"]),
+[value="Clientes"]:checked ~ .posts .post:not([data-category~="Clientes"]) {
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="Inventario"]:checked ~ .container-category [for="Inventario"],
+[value="Productos"]:checked ~ .container-category [for="Productos"],
+[value="Clientes"]:checked ~ .container-category [for="Clientes"] {
+    background: #46a2fd;
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
