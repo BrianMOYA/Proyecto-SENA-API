@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*-----------------Estilos de boton-----------------*/
 
-button {
+button, .button {
     border-radius: 10px;
     width: 50%;
     height: 50px;

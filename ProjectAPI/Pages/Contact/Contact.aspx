@@ -1,6 +1,5 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Contact.aspx.vb" Inherits="ProjectAPI.Contact_" %>
+﻿<%@ Page Title="La Molienda | Contáctanos" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Contact.aspx.vb" Inherits="ProjectAPI.Contact_" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>La Molienda | Contacto</title>
     <link href="Styles/LaMolienda.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" />
 </asp:Content>
@@ -21,7 +20,7 @@
                     <p class="parrafo">Ágil proceso de inventarios mejor conocido como API, es el mejor sistema de información que le facilitará el registro, actualización y control de los productos del inventario para evitar pérdidas de tiempo y dinero, así, automatizando los procesos en el manejo y control de los inventarios de la empresa.</p>
                 </div>
             </section>
-            
+      
             <h2 class="sobre-nosotros">Desarrolladores</h2>
             <section class="cont">
                 <div class="flip-card">
