@@ -4,7 +4,7 @@
     <head runat="server">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>La Molienda | Iniciar Sesión</title>
-        <link href="Styles/Styles.css" rel="stylesheet" />
+        <link href="Estilos/Estilo.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     </head>

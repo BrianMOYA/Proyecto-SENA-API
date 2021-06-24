@@ -50,13 +50,13 @@ Partial Public Class Cliente1
     Protected WithEvents txtApellidoCliente As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control lblDireccionCliente.
+    '''Control lblCorreoCliente.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblDireccionCliente As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblCorreoCliente As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control txtEmailCliente.
@@ -86,6 +86,42 @@ Partial Public Class Cliente1
     Protected WithEvents txtCelularCliente As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control lblNegocioCliente.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblNegocioCliente As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtnegocioCliente.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtnegocioCliente As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control lblDireccionNegocioCliente.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblDireccionNegocioCliente As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control txtdireccionNegocioCliente.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtdireccionNegocioCliente As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control btnRegistrarCliente.
     '''</summary>
     '''<remarks>
@@ -95,13 +131,13 @@ Partial Public Class Cliente1
     Protected WithEvents btnRegistrarCliente As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control lblResultado2.
+    '''Control lblResultado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblResultado2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblResultado As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control gvCliente.

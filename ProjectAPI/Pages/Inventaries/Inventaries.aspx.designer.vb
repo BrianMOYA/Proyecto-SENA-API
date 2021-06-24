@@ -149,13 +149,13 @@ Partial Public Class Inventaries_
     Protected WithEvents btnRegistrarInventario As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control lblResultado1.
+    '''Control lblResultado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblResultado1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblResultado As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control gvInventario.

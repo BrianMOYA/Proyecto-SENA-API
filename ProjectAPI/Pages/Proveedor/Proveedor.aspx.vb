@@ -6,12 +6,17 @@
     End Sub
 
     Protected Sub btnRegistrarProveedor_Click(sender As Object, e As EventArgs) Handles btnRegistrarProveedor.Click
-        newproveedor.SetmarcaProveedor(txtmarcaProveedor.Text)
+        newproveedor.SetempresaProveedor(txtempresaProveedor.Text)
         newproveedor.SetnombreProveedor(txtnombreProveedor.Text)
         newproveedor.GuardarProveedor()
+        lblResultado.Text = newproveedor.mensaje
 
-        txtmarcaProveedor.Text = " "
+        txtempresaProveedor.Text = " "
         txtnombreProveedor.Text = " "
         gvProveedor.DataBind()
+    End Sub
+
+    Protected Sub txtempresaProveedor_TextChanged(sender As Object, e As EventArgs) Handles txtempresaProveedor.TextChanged
+
     End Sub
 End Class

@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="banner">
-        <img src="Images/Background.jpg" class="banner_img"/>
+        <img src="Images/Backgroundotro.jpg" class="banner_img"/>
         <div class="contenedor">
             <h2 class="banner__titulo">Los Mejores productos a tu alcance</h2>
             <h3 class="banner__txt">Una gran variedad de productos para tu hogar</h3>
@@ -13,9 +13,11 @@
         <div class="contenedor">
             <section class="info">
                 <article class="info__columna">
-                    <img src="Images/Request.jpg" class="info__img"/>
-                    <h2 class="info__titulo">Registra tus productos</h2>
-                    <p class="info__txt">Registra tus producto de forma rápida y segura</p> 
+                    <center>
+                        <img src="Images/Request.jpg" class="info__img"/>
+                        <h2 class="info__titulo">Registra tus productos</h2>
+                        <p class="info__txt">Registra tus producto de forma rápida y segura</p> 
+                    </center>
                 </article>
                 <article class="info__columna">
                     <img src="Images/Molienda.PNG" class="info__img"/>

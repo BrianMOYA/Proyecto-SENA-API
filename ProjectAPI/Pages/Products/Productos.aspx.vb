@@ -11,6 +11,7 @@
         newproducto.SetidProveedor(lstProveedor.SelectedValue)
         newproducto.SetidCliente(lstCliente.SelectedValue)
         newproducto.GuardarProducto()
+        lblResultado.Text = newproducto.mensaje
 
         txtNombreProducto.Text = " "
         txtPrecioProducto.Text = " "

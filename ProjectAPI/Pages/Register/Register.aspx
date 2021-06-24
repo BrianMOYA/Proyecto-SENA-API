@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>La Molienda | Registrar</title>
         <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
-        <link href="Styles/Styles.css" rel="stylesheet" />
+        <link href="Estilos/Estilo.css" rel="stylesheet" />
     </head>
     <body>
         <img src="Images/Background.png" class="wave"/>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="div">
                             <h5>Correo</h5>
-                            <asp:TextBox class="input" ID="txtCorreoConfirmar" runat="server"></asp:TextBox>
+                            <asp:TextBox class="input" ID="txtCorreoConfirmar" runat="server" TextMode="Email"></asp:TextBox>
                         </div>
                     </div>                
                     
@@ -50,7 +50,7 @@
                         </div>
                         <div class="div">
                             <h5>Contraseña</h5>
-                            <asp:TextBox class="input" ID="txtContraseñaRegistrar" runat="server" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox class="input" ID="txtContraseñaRegistrar" runat="server" TextMode="Password" MaxLength="15"></asp:TextBox>
                         </div>
                     </div>
                     <div class="input-div one">
@@ -59,11 +59,12 @@
                         </div>
                         <div class="div">
                             <h5>Celular</h5>
-                            <asp:TextBox class="input" ID="txtCelular" runat="server"></asp:TextBox>
+                            <asp:TextBox class="input" ID="txtCelular" runat="server" TextMode="Number" MaxLength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></asp:TextBox>
                         </div>
                     </div>
                     <asp:Button class="btn" ID="btnRegistrar" runat="server" Text="Registrarse"/>
                     <input class="btn" type="button" value="Regresar a Inicio" onclick = "location='../Home/Home.aspx'"/>
+                    <br />
                     <div>
                         <asp:Label ID="lblResultado" runat="server"></asp:Label>
                     </div>

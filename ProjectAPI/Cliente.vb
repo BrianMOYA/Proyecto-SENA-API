@@ -7,6 +7,9 @@ Public Class Cliente
     Private apellidoCliente As String
     Private emailCliente As String
     Private celularCliente As String
+    Private negocioCliente As String
+    Private direccionNegocioCliente As String
+
     Public mensaje As String = ""
     Private Cnn As String = ConfigurationManager.AppSettings("StrConexion")
     Private conexion As New SqlConnection(Cnn)
@@ -35,6 +38,12 @@ Public Class Cliente
     Function GetcelularCliente() As String
         Return celularCliente
     End Function
+    Function GetnegocioCliente() As String
+        Return negocioCliente
+    End Function
+    Function GetdireccionNegocioCliente() As String
+        Return direccionNegocioCliente
+    End Function
     Sub SetnombreCliente(ByVal nombreCliente As String)
         Me.nombreCliente = nombreCliente
     End Sub
@@ -47,12 +56,18 @@ Public Class Cliente
     Sub SetcelularCliente(ByVal celularCliente As String)
         Me.celularCliente = celularCliente
     End Sub
+    Sub SetnegocioCliente(ByVal negocioCliente As String)
+        Me.negocioCliente = negocioCliente
+    End Sub
+    Sub SetdireccionNegocioCliente(ByVal direccionNegocioCliente As String)
+        Me.direccionNegocioCliente = direccionNegocioCliente
+    End Sub
     Public Sub GuardarCliente()
         Dim cmdSQL As New SqlCommand
         Dim drConsulta As SqlDataReader
         Dim cadSQL As String = ""
         Dim NuevoID As Integer
-        cadSQL = "insert into Cliente values('" & nombreCliente & "', '" & apellidoCliente & "', '" & emailCliente & "', '" & celularCliente & "')"
+        cadSQL = "insert into Cliente values('" & nombreCliente & "', '" & apellidoCliente & "', '" & emailCliente & "', '" & celularCliente & "', '" & negocioCliente & "', '" & direccionNegocioCliente & "')"
         Conectar()
         cmdSQL = New SqlCommand(cadSQL, conexion)
         cmdSQL.ExecuteNonQuery()

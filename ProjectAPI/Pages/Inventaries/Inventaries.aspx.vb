@@ -18,6 +18,7 @@
         Inventario1.SettotalBodega(txtTotalBodega.Text)
         Inventario1.SetidProducto(lstProducto.SelectedValue)
         Inventario1.GuardarInventario()
+        lblResultado.Text = Inventario1.mensaje
 
         txtEntrada.Text = " "
         txtSalida.Text = " "

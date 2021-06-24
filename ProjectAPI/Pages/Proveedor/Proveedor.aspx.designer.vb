@@ -23,13 +23,13 @@ Partial Public Class Proveedor1
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control txtmarcaProveedor.
+    '''Control txtempresaProveedor.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtmarcaProveedor As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtempresaProveedor As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control Label4.
@@ -59,13 +59,13 @@ Partial Public Class Proveedor1
     Protected WithEvents btnRegistrarProveedor As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control lblResultado4.
+    '''Control lblResultado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lblResultado4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblResultado As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control gvProveedor.

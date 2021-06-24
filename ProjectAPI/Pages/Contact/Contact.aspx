@@ -1,11 +1,10 @@
 ﻿<%@ Page Title="La Molienda | Contáctanos" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Contact.aspx.vb" Inherits="ProjectAPI.Contact_" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="Styles/LaMolienda.css" rel="stylesheet" />
-    <link href="Styles/Styles.css" rel="stylesheet" />
+    <link href="Estilos/Estilo.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="banner">
-        <img src="Images/Background.jpg" class="banner_img"/>
+        <img src="Images/Background12.jpg" class="banner_img"/>
         <div class="contenedor">
             <h2 class="banner__titulo">Bienvenidos a API (Ágil Proceso de inventarios)</h2>
             <p class="banner__txt">Si lo puedes imaginar, podremos hacerlo realidad</p>
@@ -13,7 +12,7 @@
     </div>
 
     <main class="main">
-        <div class="contenedor">
+        <div class="contenedort">
             <section class="acerca-de">
                 <div class="contenedor">
                     <h2 class="sobre-nosotros">ÁGIL PROCESO DE INVENTARIOS</h2>

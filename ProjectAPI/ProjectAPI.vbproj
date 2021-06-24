@@ -92,6 +92,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\Estilo.css" />
     <Content Include="Images\Background.png" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Molienda.png" />
@@ -99,8 +100,10 @@
     <Content Include="JS\Scripts.js" />
     <Content Include="Login.aspx" />
     <Content Include="Pages\Clientes\Cliente.aspx" />
+    <Content Include="Pages\Clientes\Estilos\Estilo.css" />
     <Content Include="Pages\Clientes\Images\Molienda.PNG" />
     <Content Include="Pages\Contact\Contact.aspx" />
+    <Content Include="Pages\Contact\Estilos\Estilo.css" />
     <Content Include="Pages\Contact\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Contact\Images\Background.jpg" />
     <Content Include="Pages\Contact\Images\Background2.jpg" />
@@ -109,8 +112,7 @@
     <Content Include="Pages\Contact\Images\Molienda.PNG" />
     <Content Include="Pages\Contact\Images\User.png" />
     <Content Include="Pages\Contact\JS\Scripts.js" />
-    <Content Include="Pages\Contact\Styles\LaMolienda.css" />
-    <Content Include="Pages\Contact\Styles\Styles.css" />
+    <Content Include="Pages\Home\Estilos\Estilo.css" />
     <Content Include="Pages\Home\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Home\Home.aspx" />
     <Content Include="Pages\Home\Images\Background.jpg" />
@@ -123,16 +125,15 @@
     <Content Include="Pages\Home\Images\Product4.jpg" />
     <Content Include="Pages\Home\Images\Request.jpg" />
     <Content Include="Pages\Home\JS\Scripts.js" />
-    <Content Include="Pages\Home\Styles\LaMolienda.css" />
-    <Content Include="Pages\Home\Styles\Styles.css" />
+    <Content Include="Pages\Inventaries\Estilos\Estilo.css" />
     <Content Include="Pages\Inventaries\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Inventaries\Images\Background.jpg" />
     <Content Include="Pages\Inventaries\Images\Molienda.PNG" />
     <Content Include="Pages\Inventaries\Inventaries.aspx" />
     <Content Include="Pages\Inventaries\JS\Scripts.js" />
-    <Content Include="Pages\Inventaries\Styles\LaMolienda.css" />
-    <Content Include="Pages\Inventaries\Styles\Styles.css" />
+    <Content Include="Pages\Products\Estilos\Estilo.css" />
     <Content Include="Pages\Products\Productos.aspx" />
+    <Content Include="Pages\Proveedor\Estilos\Estilo.css" />
     <Content Include="Pages\Proveedor\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Proveedor\Images\Background.jpg" />
     <Content Include="Pages\Proveedor\Images\BackgroundPopUp.jpg" />
@@ -167,8 +168,6 @@
     <Content Include="Pages\Proveedor\Images\Product9.jpg" />
     <Content Include="Pages\Proveedor\JS\Scripts.js" />
     <Content Include="Pages\Proveedor\Proveedor.aspx" />
-    <Content Include="Pages\Proveedor\Styles\LaMolienda.css" />
-    <Content Include="Pages\Proveedor\Styles\Styles.css" />
     <Content Include="Pages\Products\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Products\Images\Background.jpg" />
     <Content Include="Pages\Products\Images\BackgroundPopUp.jpg" />
@@ -202,19 +201,13 @@
     <Content Include="Pages\Products\Images\Product8.jpg" />
     <Content Include="Pages\Products\Images\Product9.jpg" />
     <Content Include="Pages\Products\JS\Scripts.js" />
-    <Content Include="Pages\Products\Styles\LaMolienda.css" />
-    <Content Include="Pages\Products\Styles\Styles.css" />
     <Content Include="Pages\Clientes\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Clientes\Images\Background.jpg" />
-    <Content Include="Pages\Clientes\Styles\LaMolienda.css" />
-    <Content Include="Pages\Clientes\Styles\Styles.css" />
+    <Content Include="Pages\Register\Estilos\Estilo.css" />
     <Content Include="Pages\Register\Images\Background.png" />
     <Content Include="Pages\Register\Images\Molienda.png" />
     <Content Include="Pages\Register\JS\Scripts.js" />
     <Content Include="Pages\Register\Register.aspx" />
-    <Content Include="Pages\Register\Styles\Styles.css" />
-    <Content Include="Styles\LaMolienda.css" />
-    <Content Include="Styles\Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -300,7 +293,7 @@
     </Compile>
     <Compile Include="Pages\Register\Register.aspx.vb">
       <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Productos.vb" />
     <Compile Include="Proveedor.vb" />
@@ -367,6 +360,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\ImgIconosCRUD\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

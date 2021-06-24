@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Imports System.Data
 Public Class Proveedor
     Private idProveedor As Integer
-    Private marcaProveedor As String
+    Private empresaProveedor As String
     Private nombreProveedor As String
     Public mensaje As String = ""
     Private Cnn As String = ConfigurationManager.AppSettings("StrConexion")
@@ -21,14 +21,14 @@ Public Class Proveedor
     Function GetidProveedor() As Integer
         Return Me.idProveedor
     End Function
-    Function GetmarcaProveedor() As String
-        Return marcaProveedor
+    Function GetempresaProveedor() As String
+        Return empresaProveedor
     End Function
     Function GetnombreProveedor() As String
         Return nombreProveedor
     End Function
-    Sub SetmarcaProveedor(ByVal marcaProveedor As String)
-        Me.marcaProveedor = marcaProveedor
+    Sub SetempresaProveedor(ByVal marcaProveedor As String)
+        Me.empresaProveedor = marcaProveedor
     End Sub
     Sub SetnombreProveedor(ByVal nombreProveedor As String)
         Me.nombreProveedor = nombreProveedor
@@ -38,7 +38,7 @@ Public Class Proveedor
         Dim drConsulta As SqlDataReader
         Dim cadSQL As String = ""
         Dim NuevoID As Integer
-        cadSQL = "insert into Proveedor values('" & marcaProveedor & "', '" & nombreProveedor & "', '  1  ')"
+        cadSQL = "insert into Proveedor values('" & empresaProveedor & "', '" & nombreProveedor & "', '  1  ')"
         Conectar()
         cmdSQL = New SqlCommand(cadSQL, conexion)
         cmdSQL.ExecuteNonQuery()

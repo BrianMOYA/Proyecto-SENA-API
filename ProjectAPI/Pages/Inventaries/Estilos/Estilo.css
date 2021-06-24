@@ -1,0 +1,67 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {
+    box-sizing: border-box;
+}
+
+.container-post {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts {
+    width: 100%;
+    padding: 20px;
+}
+
+    .posts .post {
+        background: #DBE4EB;
+        box-shadow: 0 0 30px -20px black;
+        border-radius: 6px;
+        overflow: hidden;
+        margin: 40px;
+        padding-bottom: 20px;
+    }
+
+        .posts .post:hover {
+            box-shadow: 0 0 40px -20px black;
+        }
+
+.input {
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #838383;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.btn {
+    display: inline-grid;
+    width: 20%;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+    .btn:hover {
+        background-position: right;
+    }

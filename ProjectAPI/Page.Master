@@ -4,53 +4,49 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="Pages/Home/Styles/LaMolienda.css" rel="stylesheet" />
-    <link href="Pages/Home/Styles/Styles.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Pages/Home/Estilos/Estilo.css" rel="stylesheet" />
     <title>Inicio</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <div>
-               <header class="header">
-      <div class="contenedor">
-        <h1 class="logo">La Molienda</h1>
-        
-        <nav class="nav" id="nav">
-          <ul class="menu">
-            <li class="menu__item"><a href="../Home/Home.aspx" class="menu__link">Inicio</a></li>
-            <li class="menu__item"><a href="../Clientes/Cliente.aspx" class="menu__link">Clientes</a></li>
-            <li class="menu__item"><a href="../Products/Productos.aspx" class="menu__link">Productos</a></li>
-            <li class="menu__item"><a href="../Proveedor/Proveedor.aspx" class="menu__link">Proveedores</a></li>
-            <li class="menu__item"><a href="../Inventaries/Inventaries.aspx" class="menu__link">Inventarios</a></li>
-            <li class="menu__item"><a href="../Contact/Contact.aspx" class="menu__link">Contáctanos</a></li>
-            <li class="menu__item"><a href="../Register/Register.aspx" class="menu__link">Registrar</a></li>
-            <li class="menu__item"><a href="../../Login.aspx" class="menu__link">Cerrar Sesión</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <span class="icon-menu" id="btn-menu"></span>
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+        <header class="header">
+            <div class="contenedor">
+                <h1 class="logo">La Molienda</h1>
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="../Home/Home.aspx" class="menu__link">Inicio</a></li>
+                        <li class="menu__item"><a href="../Clientes/Cliente.aspx" class="menu__link">Clientes</a></li>
+                        <li class="menu__item"><a href="../Proveedor/Proveedor.aspx" class="menu__link">Proveedores</a></li>
+                        <li class="menu__item"><a href="../Products/Productos.aspx" class="menu__link">Productos</a></li>
+                        <li class="menu__item"><a href="../Inventaries/Inventaries.aspx" class="menu__link">Inventarios</a></li>
+                        <li class="menu__item"><a href="../Contact/Contact.aspx" class="menu__link">Contáctanos</a></li>
+                        <li class="menu__item"><a href="../Register/Register.aspx" class="menu__link">Registrar</a></li>
+                        <li class="menu__item"><a href="../../Login.aspx" class="menu__link">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <span class="icon-menu" id="btn-menu"></span>
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-    
-            </asp:ContentPlaceHolder>
-           
-     <footer class="footer">
-      <div class="contenedor">
-        <p>DESARROLLADO POR API - AGÍL PROCESO DE INVENTARIOS</p>
-        <p>Luis Alfonso Quiroga Silva</p>
-        <p>Brian Steven Moya Callejas</p>
-        <p>Uriel Armando Astaiza Castro</p>
-        <p class="copy">&copy; La Molienda Todos los derechos reservados</p>
-      </div>
-    </footer>
-        </div>
+        </asp:ContentPlaceHolder>
+        <footer class="footer">
+            <div class="contenedor">
+                <p>DESARROLLADO POR API - ÁGIL PROCESO DE INVENTARIOS</p>
+                <p>Luis Alfonso Quiroga Silva</p>
+                <p>Brian Steven Moya Callejas</p>
+                <p>Uriel Armando Astaiza Castro</p>
+                <p class="copy">&copy; La Molienda Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
