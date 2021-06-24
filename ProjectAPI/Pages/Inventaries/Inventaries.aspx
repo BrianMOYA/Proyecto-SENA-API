@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <span class="icon-menu" id="btn-menu"></span>
     <div class="banner">
-        <img src="Images/Background.jpg" class="banner_img" />
+        <img src="Images/Background2.jpg" class="banner_img" />
         <div class="contenedor">
             <h2 class="banner__titulo">Gestiona y revisa todos tus Inventarios</h2>
             <p class="banner__txt">Nosotros te ayudaremos a optimizar tu tiempo</p>
@@ -18,6 +18,13 @@
                 <center>
                     <img src="Images/Molienda.PNG" style="width: 20%;" />
                     <div>
+                        <div>
+                            <asp:Label ID="Label1" runat="server" Text="Producto: "></asp:Label>
+                            &nbsp;<asp:DropDownList ID="lstProducto" runat="server" DataSourceID="ApidataSource" DataTextField="nombreProducto" DataValueField="idProducto" CssClass="input">
+                            </asp:DropDownList>
+                            <asp:SqlDataSource ID="ApidataSource" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" SelectCommand="SELECT [idProducto], [nombreProducto] FROM [Producto]"></asp:SqlDataSource>
+                        </div>
+                         <br />
                         <div>
                             <asp:Label ID="lblEntrada" runat="server" Text="Entrada:"></asp:Label>
                             &nbsp;<asp:TextBox ID="txtEntrada" runat="server" CssClass="input" TextMode="Number"></asp:TextBox>
@@ -44,14 +51,7 @@
                         </div>
                         <br />
                         <div>
-                            <asp:Label ID="Label1" runat="server" Text="Producto: "></asp:Label>
-                            &nbsp;<asp:DropDownList ID="lstProducto" runat="server" DataSourceID="ApidataSource" DataTextField="nombreProducto" DataValueField="idProducto" CssClass="input">
-                            </asp:DropDownList>
-                            <asp:SqlDataSource ID="ApidataSource" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" SelectCommand="SELECT [idProducto], [nombreProducto] FROM [Producto]"></asp:SqlDataSource>
-                        </div>
-                        <br />
-                        <div>
-                            <asp:Button class="btn" ID="btnCalcular" runat="server" Text="Calcular" />&nbsp;
+                            <asp:Button class="btn" ID="btnCalcular" runat="server" Text="Calcular" /><br />
                             <asp:Button class="btn" ID="btnRegistrarInventario" runat="server" Text="Registrar Inventario" />
                         </div>
                         <div>

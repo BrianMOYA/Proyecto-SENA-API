@@ -1,4 +1,4 @@
-﻿<%@ Page Title="La Molienda | Proveedor" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Proveedor.aspx.vb" Inherits="ProjectAPI.Proveedor1" %>
+﻿<%@ Page Title="La Molienda | Proveedores" Language="vb" AutoEventWireup="false" MasterPageFile="~/Page.Master" CodeBehind="Proveedor.aspx.vb" Inherits="ProjectAPI.Proveedor1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="Estilos/Estilo.css" rel="stylesheet" />

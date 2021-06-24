@@ -14,6 +14,33 @@ Option Explicit On
 Partial Public Class Inventaries_
 
     '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control lstProducto.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lstProducto As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control ApidataSource.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ApidataSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''Control lblEntrada.
     '''</summary>
     '''<remarks>
@@ -102,33 +129,6 @@ Partial Public Class Inventaries_
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtTotalBodega As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control Label1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control lstProducto.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lstProducto As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Control ApidataSource.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ApidataSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control btnCalcular.

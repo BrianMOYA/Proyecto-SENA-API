@@ -22,7 +22,9 @@
                 <article class="info__columna">
                     <img src="Images/Molienda.PNG" class="info__img"/>
                     <h2 class="info__titulo">Información</h2>
-                    <p class="info__txt"><strong>Dirección:<br/>Telefono:<br/>Celular:<br/>Correo:</strong></p>
+                    <center>
+                        <p class="info__txt"><strong>Dirección:</strong>  Cll. 48 Sur #95, Soacha<br/><strong>Telefono:</strong> 4653839<br/><strong>Celular:</strong> 3003955475<br/><strong>Correo:</strong> adflor1@gmail.com</p>
+                    </center>
                 </article>
                 <article class="info__columna">
                     <center>
@@ -41,7 +43,7 @@
                     <img src="Images/Product1.jpg" class="cursos__img"/>
                     <div class="cursos__descripcion">
                         <h2 class="cursos__titulo">Historia</h2>
-                        <div class="cursos__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, dignissimos.</div>
+                        <div class="cursos__txt">La empresa nace en el año 2001, con un enfoque comercial y un concepto de mercado, fue creada con el fin, de tener ingresos económicos y abastecer otras empresas ya sean grandes o pequeñas, con productos de gran calidad y precio. Por otro lado, fue creada para generar empleo.</div>
                     </div>
                 </div>
                 <div class="cursos__columna">
@@ -62,7 +64,7 @@
                     <img src="Images/Product4.jpg" class="cursos__img"/>
                     <div class="cursos__descripcion">
                         <h2 class="cursos__titulo">Objetivos</h2>
-                        <div class="cursos__txt">Nulla, cumque sunt laudantium blanditiis deserunt, error dolores vero iure.</div>
+                        <div class="cursos__txt">1. Brindar los mejores productos para las diferentes empresas al mejor precio<br /> 2. Reducir al máximo el desperdicio de alimentos<br /> 3. Fomentar el servicio más hospitalario.<br /> 4. Imponer una tendencia de consumo novedosa, rentable y respetuosa.<br /></div>
                     </div>
                 </div>
             </section> 
