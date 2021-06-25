@@ -23,7 +23,7 @@
                     <img src="Images/Molienda.PNG" class="info__img"/>
                     <h2 class="info__titulo">Información</h2>
                     <center>
-                        <p class="info__txt"><strong>Dirección:</strong>  Cll. 48 Sur #95, Soacha<br/><strong>Telefono:</strong> 4653839<br/><strong>Celular:</strong> 3003955475<br/><strong>Correo:</strong> adflor1@gmail.com</p>
+                        <p class="info__txt"><strong>Dirección:</strong>  Cll. 48 Sur #95, Soacha<br/><strong>Teléfono:</strong> 4653839<br/><strong>Celular:</strong> 3003955475<br/><strong>Correo:</strong> adflor1@gmail.com</p>
                     </center>
                 </article>
                 <article class="info__columna">

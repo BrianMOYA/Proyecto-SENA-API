@@ -92,6 +92,11 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ErrorPaginas\error404Pagina.aspx" />
+    <Content Include="ErrorPaginas\error500pagina.aspx" />
+    <Content Include="ErrorPaginas\Estilos\Estilo.css" />
+    <Content Include="ErrorPaginas\Imagenes\error404.png" />
+    <Content Include="ErrorPaginas\Imagenes\error500.png" />
     <Content Include="Estilos\Estilo.css" />
     <Content Include="Images\Background.png" />
     <Content Include="Images\Logo.png" />
@@ -130,7 +135,6 @@
     <Content Include="Pages\Inventaries\Images\Background.jpg" />
     <Content Include="Pages\Inventaries\Images\Molienda.PNG" />
     <Content Include="Pages\Inventaries\Inventaries.aspx" />
-    <Content Include="Pages\Inventaries\JS\Scripts.js" />
     <Content Include="Pages\Products\Estilos\Estilo.css" />
     <Content Include="Pages\Products\Productos.aspx" />
     <Content Include="Pages\Proveedor\Estilos\Estilo.css" />
@@ -166,7 +170,6 @@
     <Content Include="Pages\Proveedor\Images\Product7.jpg" />
     <Content Include="Pages\Proveedor\Images\Product8.jpg" />
     <Content Include="Pages\Proveedor\Images\Product9.jpg" />
-    <Content Include="Pages\Proveedor\JS\Scripts.js" />
     <Content Include="Pages\Proveedor\Proveedor.aspx" />
     <Content Include="Pages\Products\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Products\Images\Background.jpg" />
@@ -200,7 +203,6 @@
     <Content Include="Pages\Products\Images\Product7.jpg" />
     <Content Include="Pages\Products\Images\Product8.jpg" />
     <Content Include="Pages\Products\Images\Product9.jpg" />
-    <Content Include="Pages\Products\JS\Scripts.js" />
     <Content Include="Pages\Clientes\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Clientes\Images\Background.jpg" />
     <Content Include="Pages\Register\Estilos\Estilo.css" />
@@ -212,6 +214,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.vb" />
+    <Compile Include="ErrorPaginas\error404Pagina.aspx.designer.vb">
+      <DependentUpon>error404Pagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPaginas\error404Pagina.aspx.vb">
+      <DependentUpon>error404Pagina.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPaginas\error500pagina.aspx.designer.vb">
+      <DependentUpon>error500pagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPaginas\error500pagina.aspx.vb">
+      <DependentUpon>error500pagina.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Inventario.vb" />
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>

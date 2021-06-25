@@ -28,14 +28,14 @@
                         </div>
                         <br />
                         <div>
-                            <asp:Label ID="Label1" runat="server" Text="idProveedor: "></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text="ID Proveedor: "></asp:Label>
                             &nbsp;<asp:DropDownList ID="lstProveedor" runat="server" DataSourceID="ProductosConecctionString" DataTextField="nombreProveedor" DataValueField="idProveedor" CssClass="input">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="ProductosConecctionString" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" SelectCommand="SELECT [idProveedor], [nombreProveedor] FROM [Proveedor]"></asp:SqlDataSource>
                         </div>
                         <br />
                         <div>
-                            <asp:Label ID="Label2" runat="server" Text="idCliente: "></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text="ID Cliente: "></asp:Label>
                             &nbsp;<asp:DropDownList ID="lstCliente" runat="server" DataSourceID="ClientesDataSource" DataTextField="nombreCliente" DataValueField="idCliente" CssClass="input">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="ClientesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" SelectCommand="SELECT [idCliente], [nombreCliente] FROM [Cliente]"></asp:SqlDataSource>

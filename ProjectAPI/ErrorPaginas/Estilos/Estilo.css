@@ -1,0 +1,31 @@
+﻿@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div {
+    text-align:center;
+}
+p{
+    font-weight:bold;
+}
+input {
+    width: 20%;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+    input:hover {
+        background-position: right;
+    }
