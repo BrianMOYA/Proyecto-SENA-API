@@ -31,14 +31,14 @@
                             <asp:Label ID="Label1" runat="server" Text="idProveedor: "></asp:Label>
                             &nbsp;<asp:DropDownList ID="lstProveedor" runat="server" DataSourceID="ProductosConecctionString" DataTextField="nombreProveedor" DataValueField="idProveedor" CssClass="input">
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="ProductosConecctionString" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" SelectCommand="SELECT [idProveedor], [nombreProveedor] FROM [Proveedor]"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="ProductosConecctionString" runat="server" ConnectionString="<%$ ConnectionStrings:APICliente %>" SelectCommand="SELECT [idProveedor], [nombreProveedor] FROM [Proveedor]"></asp:SqlDataSource>
                         </div>
                         <br />
                         <div>
                             <asp:Label ID="Label2" runat="server" Text="idCliente: "></asp:Label>
                             &nbsp;<asp:DropDownList ID="lstCliente" runat="server" DataSourceID="ClientesDataSource" DataTextField="nombreCliente" DataValueField="idCliente" CssClass="input">
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="ClientesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" SelectCommand="SELECT [idCliente], [nombreCliente] FROM [Cliente]"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="ClientesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:APICliente %>" SelectCommand="SELECT [idCliente], [nombreCliente] FROM [Cliente]"></asp:SqlDataSource>
                         </div>
                         <div>
                             &nbsp;
@@ -73,7 +73,7 @@
                             <SortedDescendingCellStyle BackColor="#EAEAD3" />
                             <SortedDescendingHeaderStyle BackColor="#575357" />
                         </asp:GridView>
-                        <asp:SqlDataSource ID="SqlDataSourceProductos" runat="server" ConnectionString="<%$ ConnectionStrings:API %>" DeleteCommand="DELETE FROM [Producto] WHERE [idProducto] = @original_idProducto AND [nombreProducto] = @original_nombreProducto AND [precioProducto] = @original_precioProducto AND [idProveedor] = @original_idProveedor AND [idCliente] = @original_idCliente" InsertCommand="INSERT INTO [Producto] ([nombreProducto], [precioProducto], [idProveedor], [idCliente]) VALUES (@nombreProducto, @precioProducto, @idProveedor, @idCliente)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Producto]" UpdateCommand="UPDATE [Producto] SET [nombreProducto] = @nombreProducto, [precioProducto] = @precioProducto, [idProveedor] = @idProveedor, [idCliente] = @idCliente WHERE [idProducto] = @original_idProducto AND [nombreProducto] = @original_nombreProducto AND [precioProducto] = @original_precioProducto AND [idProveedor] = @original_idProveedor AND [idCliente] = @original_idCliente" ConflictDetection="CompareAllValues">
+                        <asp:SqlDataSource ID="SqlDataSourceProductos" runat="server" ConnectionString="<%$ ConnectionStrings:APICliente %>" DeleteCommand="DELETE FROM [Producto] WHERE [idProducto] = @original_idProducto AND [nombreProducto] = @original_nombreProducto AND [precioProducto] = @original_precioProducto AND [idProveedor] = @original_idProveedor AND [idCliente] = @original_idCliente" InsertCommand="INSERT INTO [Producto] ([nombreProducto], [precioProducto], [idProveedor], [idCliente]) VALUES (@nombreProducto, @precioProducto, @idProveedor, @idCliente)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Producto]" UpdateCommand="UPDATE [Producto] SET [nombreProducto] = @nombreProducto, [precioProducto] = @precioProducto, [idProveedor] = @idProveedor, [idCliente] = @idCliente WHERE [idProducto] = @original_idProducto AND [nombreProducto] = @original_nombreProducto AND [precioProducto] = @original_precioProducto AND [idProveedor] = @original_idProveedor AND [idCliente] = @original_idCliente" ConflictDetection="CompareAllValues">
                             <DeleteParameters>
                                 <asp:Parameter Name="original_idProducto" Type="Int32" />
                                 <asp:Parameter Name="original_nombreProducto" Type="String" />
