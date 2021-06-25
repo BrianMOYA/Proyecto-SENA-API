@@ -208,34 +208,3 @@ form {
         justify-content: center;
     }
 }
-/*----------Error_Style----------*/
-/*Img 404*/
-#imgError {
-    padding-left: 40rem;
-}
-/*!UH¡*/
-#Bold{
-    font-size:7rem;
-    padding-left:48rem;
-    font-family:Courier New, Courier, monospace;
-}
-/*TEXT*/
-#txterror{
-    margin-top:2rem;
-    position:relative;
-    text-align:center;
-    width:21rem;
-    margin-left:46rem;
-    font-family:Courier New, Courier, monospace;
-}
-/*Errror_circle*/
-#x_circle{
-    width:5rem;
-    height:5rem;
-    margin-left:53.5rem;
-    margin-top:2rem;
-}
-
-
-
-

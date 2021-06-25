@@ -27,13 +27,13 @@
 
     Protected Sub gvCliente_SelectedIndexChanged(sender As Object, e As EventArgs)
 
-        End Sub
+    End Sub
 
-        Protected Sub gvCliente_SelectedIndexChanged1(sender As Object, e As EventArgs)
+    Protected Sub gvCliente_SelectedIndexChanged1(sender As Object, e As EventArgs)
 
-        End Sub
+    End Sub
 
-        Protected Sub gvCliente_SelectedIndexChanged2(sender As Object, e As EventArgs) Handles gvCliente.SelectedIndexChanged
+    Protected Sub gvCliente_SelectedIndexChanged2(sender As Object, e As EventArgs) Handles gvCliente.SelectedIndexChanged
 
-        End Sub
-    End Class
+    End Sub
+End Class

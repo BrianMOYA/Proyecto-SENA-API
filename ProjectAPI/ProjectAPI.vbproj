@@ -92,11 +92,8 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Error.aspx" />
     <Content Include="Estilos\Estilo.css" />
     <Content Include="Images\Background.png" />
-    <Content Include="Images\cancelar.svg" />
-    <Content Include="Images\error-404.svg" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Molienda.png" />
     <Content Include="JS\Return.js" />
@@ -128,10 +125,6 @@
     <Content Include="Pages\Home\Images\Product4.jpg" />
     <Content Include="Pages\Home\Images\Request.jpg" />
     <Content Include="Pages\Home\JS\Scripts.js" />
-    <Content Include="Pages\ImgIconosCRUD\Actualizar1.png" />
-    <Content Include="Pages\ImgIconosCRUD\Cancelar1.png" />
-    <Content Include="Pages\ImgIconosCRUD\Delete1.png" />
-    <Content Include="Pages\ImgIconosCRUD\Editar1.png" />
     <Content Include="Pages\Inventaries\Estilos\Estilo.css" />
     <Content Include="Pages\Inventaries\fonts\untitled-font-1.svg" />
     <Content Include="Pages\Inventaries\Images\Background.jpg" />
@@ -219,13 +212,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.vb" />
-    <Compile Include="Error.aspx.designer.vb">
-      <DependentUpon>Error.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Error.aspx.vb">
-      <DependentUpon>Error.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Inventario.vb" />
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -375,7 +361,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\ImgIconosCRUD\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
